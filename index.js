@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 const DB_URI = process.env.DB_URI;
 
 const corsOptions = {
-  origin: process.env.CLIENT_URI, // frontend URI (ReactJS)
+  origin: "*", // frontend URI (ReactJS)
 };
 
 app.use(cors(corsOptions));
